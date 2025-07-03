@@ -1,0 +1,31 @@
+Steps to Run `analyze_excel_column.py` Script
+---------------------------------------------
+
+1. Install Python libraries
+   Open your terminal or command prompt and run:
+   pip install pandas matplotlib openpyxl
+
+2. Place your Excel file
+   Save your .xlsx file (e.g., ofcom_data.xlsx) in the same folder as the script file (analyze_excel_column.py).
+
+3. Open terminal and navigate to the folder
+   Use the cd command to navigate to the script’s location:
+   cd path/to/your/folder
+Note: you need to manually enter the whole location of the .xlsx file you analysing in the method "analyze_column"   
+
+4. Run the script with your column name
+   Use this format to execute:
+   python analyze_excel_column.py yourfile.xlsx "Column Name"
+
+   Example:
+   python analyze_excel_column.py ofcom_data.xlsx "Q14b: How much did this harm bother you?"
+
+5. View results
+   The script will:
+   - Print mean, median, mode, standard deviation, min, and max of the selected column
+   - Open a histogram plot showing the column’s data distribution
+
+6. Important note
+   Make sure the column you provide:
+   - Is numeric (contains numbers)
+   - Matches exactly as it appears in the Excel file (including spaces and punctuation)
